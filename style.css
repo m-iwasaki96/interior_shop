@@ -213,3 +213,37 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 767px) {
+    /* ヘッダー */
+    #header-photos {
+        width: 100%;
+    }
+
+    /* コンセプト */
+    #concept-text br {
+        display: none;
+    }
+    #concept-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .concept-img img {
+        max-width: 50vw;
+    }
+
+    /* プロダクト */
+    .product-item {
+        flex-direction: column;
+    }
+    #instagram-link {
+        flex-direction: column;
+    }
+    #instagram-link p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #instagram-link a {
+        margin-left: 0;
+    }
+}
