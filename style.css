@@ -51,7 +51,7 @@ p {
     /* ユキノさんのコード */
     color: white;
     text-align: center;
-    background-image: url(../img/pic-top-concept-treat.png), url(./images/bg-top-concep.jpg);
+    background-image: url(../img/pic-top-concept-treat.png), url(./images/bg-top-concept.jpg);
     background-position: bottom -20px right -50px, center;
     background-size: 400px, cover;
     background-repeat: no-repeat, no-repeat;
@@ -216,25 +216,32 @@ iframe {
 
 @media (max-width: 767px) {
     /* ヘッダー */
-    #header-photos {
-        width: 100%;
+    .header-img img {
+        width: 100vw;
     }
 
     /* コンセプト */
+    #concept-text {
+        margin: 0 32px 80px 32px;
+    }
     #concept-text br {
         display: none;
     }
     #concept-photos {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        row-gap: 24px;
+        margin: 24px;
     }
-    .concept-img img {
-        max-width: 50vw;
-    }
-
     /* プロダクト */
     .product-item {
         flex-direction: column;
+    }
+    .product-item img {
+        width: 100vw;
+    }
+    .product-text p, .product-text h3 {
+        padding: 0 32px;
     }
     #instagram-link {
         flex-direction: column;
@@ -245,5 +252,16 @@ iframe {
     }
     #instagram-link a {
         margin-left: 0;
+    }
+    /* ショールーム */
+    #store-info {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    /* フッター */
+    #sns a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
     }
 }
