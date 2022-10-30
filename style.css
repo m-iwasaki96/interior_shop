@@ -59,6 +59,9 @@ p {
 #concept h1 {
     padding-top: 60px;
 }
+#concept-nl {
+    display: none;
+}
 #concept-photos {
     display: flex;
     justify-content: center;
@@ -219,10 +222,21 @@ iframe {
     .header-img img {
         width: 100vw;
     }
+    .header-img {
+        margin: 0;
+    }
+    #header-photos {
+        display: block;
+        overflow-x: unset;
+    }
+    #image1, #image2, #image4, #image5 {
+        display: none;
+    }
 
     /* コンセプト */
     #concept-text {
         margin: 0 32px 80px 32px;
+        font-size: 14px;
     }
     #concept-text br {
         display: none;
@@ -232,6 +246,12 @@ iframe {
         grid-template-columns: 1fr 1fr;
         row-gap: 24px;
         margin: 24px;
+    }
+    .concept-img img {
+        max-width: 100%;
+    }
+    #concept-nl {
+        display: inline;
     }
     /* プロダクト */
     .product-item {
@@ -243,6 +263,9 @@ iframe {
     .product-text p, .product-text h3 {
         padding: 0 32px;
     }
+    .product-text p {
+        font-size: 14px;
+    }
     #instagram-link {
         flex-direction: column;
     }
@@ -252,6 +275,9 @@ iframe {
     }
     #instagram-link a {
         margin-left: 0;
+    }
+    iframe {
+        height: 300px;
     }
     /* ショールーム */
     #store-info {
